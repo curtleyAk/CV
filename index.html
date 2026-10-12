@@ -380,11 +380,17 @@
             </p>
           </div>
           <div class="bento-footer">
-            <span style="font-size:0.8rem; color:var(--color-text-subtle);">Scaled Multi-Unit SaaS</span>
-            <a href="https://github.com/curtleyAk/BOA-HR-Hub-Vite" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
-              <span>→</span>
-            </a>
+            <span style="font-size:0.8rem; color:var(--color-text-subtle);">Scaled Multi-Unit SaaS (24 Branches)</span>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <button class="project-link" data-modal-target="boa-modal" style="background:none; border:none; cursor:pointer; font-family:inherit;">
+                <span>📸 View App Screens</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/curtleyAk/BOA-HR-Hub-Vite" target="_blank" rel="noopener" class="project-link" style="color:var(--color-text-muted);">
+                <span>Repo</span>
+                <span>↗</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -592,6 +598,79 @@
         <a href="https://www.linkedin.com/in/curtley-kennedy-a4a682ba/" target="_blank" rel="noopener" class="btn-glass" style="flex:1; justify-content:center;">
           <span>Message on LinkedIn</span>
           <span>🔗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOA SCREENSHOTS SHOWCASE MODAL -->
+  <div id="boa-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="boa-modal-title">
+    <div class="modal-window" style="max-width: 880px;">
+      <button class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="section-tag">Internal SaaS Architecture</span>
+        <h3 id="boa-modal-title" style="font-family:var(--font-serif); font-size:2.2rem; margin-top:8px;">BOA Enterprise Operations Hub</h3>
+        <p style="color:var(--color-text-muted); font-size:0.95rem; margin-top:6px;">
+          Built with <strong>React 19, Vite, Tailwind CSS, and Supabase (PostgreSQL)</strong> to coordinate 24 locations, 350+ active employees, and complex commission tiers without third-party SaaS bloat.
+        </p>
+      </div>
+
+      <!-- Gallery Item 1: Executive Dashboard -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px; margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">1. Executive Multi-Branch Operations Dashboard</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#e0f2fe; color:#0369a1; padding:3px 10px; border-radius:var(--radius-full);">Live Operations Analytics</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Centralizes real-time status across 24 stores: active headcount, clock-ins, managers on duty, automated department alerts (People & HR, Scheduling, Payroll), and hiring requisitions.
+        </p>
+        <img src="Images/projects/SCR-20261012-nimm.png" alt="BOA HR Executive Operations Dashboard" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+      </div>
+
+      <!-- Gallery Item 2: Schedule & Shift Matrix -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px; margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">2. Interactive Schedule & Roster Matrix</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#fef3c7; color:#b45309; padding:3px 10px; border-radius:var(--radius-full);">Auto-fill & Version Control</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Dynamic shift builder supporting cycle rules (Sunday rotation, off-day limits, sick leaves), multi-branch version tracking (10 revisions), CSV/PDF export, and instant Supabase commits. <em>(Staff names sanitized)</em>.
+        </p>
+        <img src="Images/projects/SCR-20261012-njlv.png" alt="BOA Operations Schedule Editor" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+      </div>
+
+      <!-- Gallery Item 3: Bonus & Commission Simulator -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px; margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">3. Interactive Commission & Payout Simulator</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#dcfce7; color:#15803d; padding:3px 10px; border-radius:var(--radius-full);">Real-time Math Engine</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Gamified employee calculator. Technicians input their projected turnover, select their experience tier (Level 1–3), and receive an instant transparent payout projection with base salary, commission bonuses, and deductions logic.
+        </p>
+        <img src="Images/projects/Screenshot 2026-10-12 at 14.59.03.png" alt="BOA Bonus and Commission Calculator" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+      </div>
+
+      <!-- Gallery Item 4: Mobile Portals Grid -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">4. Employee Self-Service & Branch Manager Portals</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#f3e8ff; color:#7e22ce; padding:3px 10px; border-radius:var(--radius-full);">Mobile-First UI</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Mobile-responsive portals for salon technicians and branch managers covering attendance, digital cash-up / bank cash logging, anonymous incident reporting, and leave requests.
+        </p>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <img src="Images/projects/Screenshot 2026-10-12 at 14.58.32.png" alt="My BOA Employee Portal" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+          <img src="Images/projects/Screenshot 2026-10-12 at 14.57.53.png" alt="BOA Store Manager Portal" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+        </div>
+      </div>
+
+      <div style="margin-top:24px; text-align:center;">
+        <a href="https://github.com/curtleyAk/BOA-HR-Hub-Vite" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;">
+          <span>Explore Source Code on GitHub</span>
+          <span>→</span>
         </a>
       </div>
     </div>
