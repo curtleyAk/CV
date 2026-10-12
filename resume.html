@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtley (Ambrose) Kennedy — Resume</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.42;
+      background: #f1f5f9;
+      padding: 30px 16px;
+      font-size: 9.8pt;
+    }
+    .resume-wrapper {
+      max-width: 840px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 36px 42px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+      border-radius: 6px;
+    }
+    .top-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #cbd5e1;
+    }
+    .back-link {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #ea580c;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .print-btn {
+      background: #0f172a;
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 8.5pt;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .print-btn:hover { background: #334155; }
+    header {
+      border-bottom: 2px solid #ea580c;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 21pt;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #ea580c;
+      margin-bottom: 6px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.8pt;
+      color: #475569;
+    }
+    .contact-bar a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .contact-bar a:hover { text-decoration: underline; }
+    section { margin-bottom: 13px; }
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+    }
+    .summary p {
+      color: #334155;
+      font-size: 9.3pt;
+      line-height: 1.45;
+      text-align: justify;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4px;
+      font-size: 8.8pt;
+      color: #334155;
+    }
+    .skills-grid strong { color: #0f172a; }
+    .job { margin-bottom: 10px; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .company-title {
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .job-dates {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #64748b;
+    }
+    .job-meta {
+      font-size: 8.5pt;
+      font-style: italic;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 16px;
+      margin-top: 3px;
+    }
+    li {
+      font-size: 8.8pt;
+      color: #334155;
+      margin-bottom: 3px;
+      line-height: 1.38;
+    }
+    li strong { color: #0f172a; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      font-size: 8.8pt;
+    }
+    .projects-grid strong { color: #0f172a; }
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.8pt;
+      margin-bottom: 3px;
+    }
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .top-actions { display: none; }
+      .resume-wrapper {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <div class="top-actions">
+      <a href="index.html" class="back-link">← Back to Portfolio</a>
+      <button class="print-btn" onclick="window.print()">
+        <span>🖨️</span>
+        <span>Print / Save as PDF (Cmd + P)</span>
+      </button>
+    </div>
+
+    <header>
+      <h1>Curtley (Ambrose) Kennedy</h1>
+      <div class="tagline">Technical Customer Success Manager | EMEA (UTC+2)</div>
+      <div class="contact-bar">
+        <span>📍 Cape Town, South Africa</span>
+        <span>📞 +27 76 864 8341</span>
+        <span>✉️ <a href="mailto:curtley.a.kennedy@gmail.com">curtley.a.kennedy@gmail.com</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/curtley-kennedy-a4a682ba/" target="_blank">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/curtleyAk" target="_blank">GitHub (1,500+ commits)</a></span>
+      </div>
+    </header>
+
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Technical Customer Success and Partner Manager with 8+ years of experience leading enterprise and mid-market B2B accounts through complex technical onboarding, adoption, and multi-year renewals. Proven track record driving Net Retention (targeting 120%+ NRR) and mitigating churn through proactive usage analysis, architectural troubleshooting, and commercial restructuring. Hands-on fluency across modern developer stacks (REST APIs, Webhooks, SQL, JavaScript, Python) and an advanced AI power user (Claude, Gemini) building automations and voice bots to eliminate client friction. Based in Cape Town with complete EMEA operational overlap.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Competencies & Toolkit</h2>
+      <div class="skills-grid">
+        <div><strong>Customer Success & Retention:</strong> Technical Onboarding, Integration Reviews, Executive QBRs, NRR/GRR Protection (120%+ Target), Churn Reversal, Health Scoring, Multi-Year Renewals.</div>
+        <div><strong>Technical & Architecture:</strong> RESTful APIs, Webhooks, HTTP/JSON Payloads, VoIP/SIP Infrastructure, SQL, JavaScript, Python, Django, Supabase/PostgreSQL, Git, Three.js, Docker basics.</div>
+        <div><strong>AI & Workflow Automation:</strong> Daily power user of Claude & Gemini; Workflow Automation (n8n, Make); Conversational AI (Retell AI, Twilio, ElevenLabs).</div>
+        <div><strong>Platforms & CRM:</strong> Salesforce, Planhat, HubSpot (Advanced Automation & Reporting), Zendesk (Certified Support Agent), Monday.com, Notion, macOS.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="company-title">VOYS TELECOM SA — Partner & Customer Success Manager</span>
+          <span class="job-dates">Dec 2024 – Present</span>
+        </div>
+        <div class="job-meta">Cloud VoIP & Telecommunications SaaS Infrastructure (Promoted to Partnerships Aug 2025)</div>
+        <ul>
+          <li><strong>Portfolio Ownership:</strong> Own commercial and technical relationships for 10 white-label partners and 50+ enterprise accounts across legal, medical, and financial sectors; safeguarded 95%+ Gross Retention.</li>
+          <li><strong>Technical Onboarding & Architecture:</strong> Lead end-to-end client onboarding and integration reviews, designing routing topologies and SIP configurations in Mermaid.js/Notion to accelerate time-to-value by 30%.</li>
+          <li><strong>Deflection & Custom Automation:</strong> Built custom automated IVR trees and self-serve FAQ routing for a major fintech client scaling into the UK, deflecting Tier-1 support escalations by 40%.</li>
+          <li><strong>Conversational Voice AI:</strong> Engineered custom conversational AI voice bots using Retell AI and Twilio for healthcare and dental enterprise clients to automate appointments, cutting no-shows by 35%.</li>
+          <li><strong>Commercial Expansion & Churn Turnaround:</strong> Reversed impending account churn during a critical pricing restructuring by auditing usage telemetry, redesigning tier bundles, and securing a multi-year contract renewal.</li>
+          <li><strong>Cross-Functional Alignment:</strong> Primary escalation bridge between enterprise executives and software/telecom engineers, translating API hurdles, bug reproductions, and feature requests.</li>
+          <li><strong>Revenue Analytics:</strong> Leveraged advanced HubSpot reporting, SQL queries, and financial models to surface unprompted expansion and upsell opportunities prior to contract renewal windows.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="company-title">BOA BEAUTY BAR — Customer Success & Operations Manager</span>
+          <span class="job-dates">Feb 2021 – Nov 2024</span>
+        </div>
+        <div class="job-meta">Multi-Unit Service & Lifestyle Brand | Cape Town, South Africa</div>
+        <ul>
+          <li><strong>Operational Scaling:</strong> Directed customer operations and onboarding infrastructure during rapid organizational scaling from 1 flagship location to 11+ branches nationwide with zero downtime.</li>
+          <li><strong>Internal Web App Development:</strong> Designed and built a bespoke internal HR and operational platform using React, Vite, and Supabase to streamline employee records, sales vaults, and scheduling data.</li>
+          <li><strong>Standard Operating Procedures:</strong> Authored 25+ comprehensive SOPs and digital playbooks, enabling new branches to achieve autonomous operational efficiency within 14 days of opening.</li>
+          <li><strong>Capacity & Data Modeling:</strong> Analyzed CRM data (Monday.com, Fresha, Connecteam) to forecast peak utilization, optimizing resource scheduling and increasing per-unit revenue efficiency by 18%.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="company-title">THE HAPPY HOME — Online Guest Experience Manager</span>
+          <span class="job-dates">Aug 2018 – Feb 2021</span>
+        </div>
+        <div class="job-meta">Short-Term Rental & Property Management Tech | Remote (EMEA)</div>
+        <ul>
+          <li><strong>Remote Lifecycle Management:</strong> Managed 100% remote client success and guest lifecycle communications across a portfolio of premium hospitality properties, maintaining a sustained 4.9/5.0 CSAT rating.</li>
+          <li><strong>Root-Cause Analysis:</strong> Conducted structured Voice-of-Customer sentiment analysis across guest reviews, deploying digital self-check-in guides that cut inbound inquiries by 25%.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="company-title">AMAZON DEVELOPMENT CENTRE — Workflow Analyst & Senior Tech Specialist</span>
+          <span class="job-dates">Mar 2016 – Apr 2018</span>
+        </div>
+        <div class="job-meta">Global Cloud & E-Commerce Technology | Cape Town, South Africa</div>
+        <ul>
+          <li><strong>Workflow Analyst (2017–2018):</strong> Managed real-time workforce allocation, queue routing, and capacity modeling across global marketplace queues, consistently safeguarding >98% daily SLA performance.</li>
+          <li><strong>Statistical Modeling:</strong> Analyzed Average Handle Time (AHT) and Non-Productive Time (NPT) to dynamically redistribute technical specialists during high-volume surges. Automated reporting dashboards with engineering teams.</li>
+          <li><strong>Senior Technical Specialist (2016–2017):</strong> Provided deep troubleshooting for Kindle devices and network configurations; partnered with engineering to reproduce software bugs and validate patches. Top 5% CSAT & FCR.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Independent Technical Projects</h2>
+      <div class="projects-grid">
+        <div><strong>Voys Jenga Platform:</strong> Real-time multiplayer organization game built with Django, Django Channels (WebSockets), Redis, PostgreSQL, Three.js, and Docker; features server-authoritative turn logic and GlassFrog API sync.</div>
+        <div><strong>BOA Enterprise HR Hub:</strong> Custom single-page application built with React, Vite, and Supabase for employee master records, performance metrics, and role tiering.</div>
+        <div><strong>Conversational Voice AI Integrations:</strong> Automated voice workflows integrating Twilio SIP trunks, Retell AI LLM agents, and ElevenLabs speech synthesis via webhook endpoints.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education, Certifications & Languages</h2>
+      <div class="edu-item">
+        <span><strong>Stellenbosch University:</strong> BSc Mathematical Science (Coursework Completed: 2011–2014)</span>
+        <span>Cape Town, SA</span>
+      </div>
+      <div class="edu-item">
+        <span><strong>Certifications:</strong> The Complete Web Development Bootcamp (Udemy, 2024) | Zendesk Support Certification (2024)</span>
+        <span>Continuous Learning</span>
+      </div>
+      <div class="edu-item">
+        <span><strong>Languages:</strong> English (Native), Afrikaans (Native), German (Conversational)</span>
+        <span>EMEA Timezone (UTC+2)</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
