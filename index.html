@@ -320,16 +320,27 @@
               <span class="tech-tag">PostgreSQL</span>
             </div>
             <h3 class="bento-title">Voys Jenga — Real-Time Multiplayer Holacracy Platform</h3>
-            <p class="bento-desc">
-              Server-authoritative multiplayer platform connecting distributed teams. Implements WebSockets state synchronization, Three.js 3D tower visualization, and real-time GlassFrog organizational API imports.
+            <p class="bento-desc" style="margin-bottom: 16px;">
+              Server-authoritative multiplayer 3D web game connecting distributed teams. Implements WebSockets state synchronization, Three.js photorealistic boulder physics with dynamic HDRI lighting, and live GlassFrog organizational API trivia.
             </p>
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-bottom:20px; cursor:pointer;" data-modal-target="jenga-modal" title="Click to view full 3D gameplay screenshots">
+              <img src="Images/jenga/jenga-sunrise-tower.jpg" alt="Voys Jenga Golden Hour 3D Tower" style="width:100%; height:110px; object-fit:cover; border-radius:10px; border:1px solid rgba(226,232,240,0.9); box-shadow:var(--shadow-sm);">
+              <img src="Images/jenga/jenga-block-selection.jpg" alt="Voys Jenga 3D Raycasting Block Selection" style="width:100%; height:110px; object-fit:cover; border-radius:10px; border:1px solid rgba(226,232,240,0.9); box-shadow:var(--shadow-sm);">
+              <img src="Images/jenga/jenga-rapid-fire-quiz.jpg" alt="Voys Jenga Rapid Fire GlassFrog Quiz" style="width:100%; height:110px; object-fit:cover; border-radius:10px; border:1px solid rgba(226,232,240,0.9); box-shadow:var(--shadow-sm);">
+            </div>
           </div>
           <div class="bento-footer">
-            <span style="font-size:0.8rem; color:var(--color-text-subtle);">Full-Stack System Architecture</span>
-            <a href="https://github.com/curtleyAk/Jenga-Holocracy" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
-              <span>→</span>
-            </a>
+            <span style="font-size:0.8rem; color:var(--color-text-subtle);">Full-Stack 3D WebGL & WebSockets</span>
+            <div style="display:flex; gap:12px; align-items:center;">
+              <button class="project-link" data-modal-target="jenga-modal" style="background:none; border:none; cursor:pointer; font-family:inherit;">
+                <span>📸 View 3D Screens (7)</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/curtleyAk/Jenga-Holocracy" target="_blank" rel="noopener" class="project-link" style="color:var(--color-text-muted);">
+                <span>Repo</span>
+                <span>↗</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -598,6 +609,85 @@
         <a href="https://www.linkedin.com/in/curtley-kennedy-a4a682ba/" target="_blank" rel="noopener" class="btn-glass" style="flex:1; justify-content:center;">
           <span>Message on LinkedIn</span>
           <span>🔗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VOYS JENGA 3D SCREENSHOTS SHOWCASE MODAL -->
+  <div id="jenga-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="jenga-modal-title">
+    <div class="modal-window" style="max-width: 920px;">
+      <button class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="section-tag">Full-Stack 3D Multiplayer Architecture</span>
+        <h3 id="jenga-modal-title" style="font-family:var(--font-serif); font-size:2.2rem; margin-top:8px;">Voys Jenga — Real-Time 3D Holacracy Platform</h3>
+        <p style="color:var(--color-text-muted); font-size:0.95rem; margin-top:6px;">
+          Engineered with <strong>Django Channels (WebSockets), Redis, Three.js (WebGL), PostgreSQL, and Docker</strong>. Connects distributed teams through server-authoritative 3D rock-tower physics and live organizational trivia synced from the <strong>GlassFrog API</strong>.
+        </p>
+      </div>
+
+      <!-- Gallery Item 1: Photorealistic 3D Tower & Dynamic HDRI Skyboxes -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px; margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">1. Photorealistic 3D Boulder Tower & Dynamic HDRI Environments</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#e0f2fe; color:#0369a1; padding:3px 10px; border-radius:var(--radius-full);">Three.js & 8K HDRI Shaders</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Renders custom 4K Namaqualand boulder meshes inside 360° South African HDRI landscapes (Klippad golden-hour sunrise and Rogland starry night) with physically based rendering (PBR) and real-time shadow mapping.
+        </p>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <img src="Images/jenga/jenga-sunrise-tower.jpg" alt="Voys Jenga Golden Hour Sunrise HDRI" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+          <img src="Images/jenga/jenga-night-holacracy.jpg" alt="Voys Jenga Starry Night HDRI and Holacracy Prompt" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+        </div>
+      </div>
+
+      <!-- Gallery Item 2: 3D Raycasting, Block Selection & Summit Stacking -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px; margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">2. Interactive 3D Raycasting, Block Pulls & Summit Placement</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#dcfce7; color:#15803d; padding:3px 10px; border-radius:var(--radius-full);">Interactive WebGL Physics</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Players orbit the camera and use 3D raycasting to highlight and extract individual rock blocks (glowing cyan on selection) before restacking them at the tower summit (glowing amber) under dynamic sunbeam lighting.
+        </p>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <img src="Images/jenga/jenga-block-selection.jpg" alt="Voys Jenga Cyan Raycast Block Selection" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+          <img src="Images/jenga/jenga-sunbeam-stack.jpg" alt="Voys Jenga Summit Block Placement with Sunbeams" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+        </div>
+      </div>
+
+      <!-- Gallery Item 3: Rapid Fire GlassFrog Quiz & Server-Authoritative Odds -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px; margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">3. Live GlassFrog API Sync & "Rapid Fire" Holacracy Trivia</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#fef3c7; color:#b45309; padding:3px 10px; border-radius:var(--radius-full);">GlassFrog REST API + WebSockets</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          Synchronizes live circles, roles, and accountabilities from GlassFrog to generate timed Rapid-Fire multiple-choice challenges. Answering accurately stabilizes the player's safe-pull probability (`ODDS %` and `TOWER %` HUD).
+        </p>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <img src="Images/jenga/jenga-rapid-fire-quiz.jpg" alt="Voys Jenga Rapid Fire Role Accountability Quiz" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+          <img src="Images/jenga/jenga-overhead-odds.jpg" alt="Voys Jenga Overhead Camera Orbit and Odds HUD" style="width:100%; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+        </div>
+      </div>
+
+      <!-- Gallery Item 4: Tower Collapse State & Game Loop -->
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:var(--radius-lg); padding:20px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <h4 style="font-size:1.1rem; font-weight:700; color:var(--color-text-main);">4. Server-Authoritative Collapse & Recovery Loop</h4>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; background:#f3e8ff; color:#7e22ce; padding:3px 10px; border-radius:var(--radius-full);">Django Channels + Redis State</span>
+        </div>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px; line-height:1.5;">
+          When a risky block pull triggers a collapse, the server broadcasts the physics tumble across connected clients, tallies Rapid-Fire accuracy modifiers, and resets the room state for instant replay.
+        </p>
+        <img src="Images/jenga/jenga-tower-collapse.jpg" alt="Voys Jenga Tower Down Collapse Screen" style="width:100%; max-height:520px; object-fit:cover; border-radius:8px; border:1px solid #e2e8f0; box-shadow:var(--shadow-sm);">
+      </div>
+
+      <div style="margin-top:24px; text-align:center;">
+        <a href="https://github.com/curtleyAk/Jenga-Holocracy" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;">
+          <span>Explore Jenga-Holocracy on GitHub</span>
+          <span>→</span>
         </a>
       </div>
     </div>
